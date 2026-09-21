@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>מחשבון סולארי: עלות, חיסכון והחזר השקעה | Get Solar</title>
+<meta name="description" content="מחשבון סולארי חינמי לחישוב גודל מערכת, עלות, חיסכון שנתי ותקופת החזר לפי חשבון החשמל, שטח הגג והכיוון.">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<link rel="canonical" href="https://getsolar.co.il/solar-calculator/">
+<meta property="og:locale" content="he_IL">
+<meta property="og:type" content="website">
+<meta property="og:title" content="מחשבון סולארי: עלות, חיסכון והחזר השקעה">
+<meta property="og:description" content="הזינו חשבון חשמל, שטח וכיוון גג וקבלו הערכה מיידית.">
+<meta property="og:url" content="https://getsolar.co.il/solar-calculator/">
+<meta property="og:image" content="https://getsolar.co.il/wp-content/uploads/2026/08/Solar.avif">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+<style>
+html{-webkit-text-size-adjust:100%;background:#0A0F16}
+body{margin:0;background:#0A0F16;color:#F4F6F8;font-family:Assistant,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+.gh-shell{max-width:1180px;margin:0 auto;padding:18px 12px 36px}
+.gh-brand{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;padding:6px 4px 18px;border-bottom:1px solid rgba(244,246,248,.12)}
+.gh-brand a{color:#F4F6F8;text-decoration:none;font-weight:800;font-size:18px}
+.gh-brand a::first-letter{color:#F5A623}
+.gh-brand span{color:#96A2B4;font-size:13px}
+.gh-foot{text-align:center;color:#96A2B4;font-size:13px;line-height:1.8;padding:28px 12px 0}
+.gh-foot a{color:#F5A623;font-weight:700}
+</style>
+</head>
+<body>
+<div class="gh-shell">
+<header class="gh-brand">
+<a href="https://getsolar.co.il/">Get Solar · גט סולאר</a>
+<span>מחשבון ציבורי למערכות סולאריות בישראל</span>
+</header>
+<main>
+<div class="gs-seo-page" dir="rtl" lang="he">
+  <section class="gs-seo-intro" aria-labelledby="gs-page-title">
+    <span class="gs-eyebrow">מחשבון חינמי של Get Solar</span>
+    <h1 id="gs-page-title">מחשבון סולארי לחישוב <span>עלות, חיסכון והחזר השקעה</span></h1>
+    <p>הזינו חשבון חשמל חודשי, שטח גג פנוי וכיוון. המחשבון יציג מערכת מומלצת לפי הצריכה שלכם, את פוטנציאל הגג המרבי, עלות משוערת, חיסכון שנתי ותקופת החזר.</p>
+    <div class="gs-trust" aria-label="נתוני Get Solar">
+      <span>יותר מ־100 התקנות</span>
+      <span>5 שנים בשוק</span>
+      <span>בדיקת גג ללא עלות</span>
+    </div>
+  </section>
+
+  <section class="gs-calc" aria-labelledby="gs-calc-title">
+    <script>
+    window.GS_CONFIG = {
+      tariff: 0.6352,
+      netMeterRate: 0.21,
+      greenRate: 0.48,
+      greenMaxKw: 15,
+      pricePerKw: 3000,
+      vat: 1.18,
+      yieldLow: 1500,
+      yieldHigh: 1700,
+      areaPerKw: 8,
+      maintenance: 0.01,
+      degradation: 0.005,
+      ctaUrl: "https://getsolar.co.il/best-price-solar-system-ws/"
+    };
+    </script>
+
+    <header class="gs-head">
+      <h2 class="gs-title" id="gs-calc-title">מחשבון חיסכון סולארי</h2>
+      <p class="gs-sub">שלושה נתונים, ומיד תראו הערכה כלכלית שמרנית לצד תרחיש של גג אופטימלי.</p>
+    </header>
+
+    <div class="gs-grid">
+      <section class="gs-panel gs-inputs" aria-label="נתוני החישוב">
+        <div class="gs-field">
+          <label class="gs-label" for="gs-bill">חשבון החשמל החודשי הממוצע</label>
+          <div class="gs-inputrow">
+            <input class="gs-range" id="gs-bill" type="range" min="150" max="3000" step="50" value="800">
+            <div class="gs-num"><input id="gs-bill-n" type="number" min="150" max="3000" step="50" value="800" aria-label="חשבון חשמל חודשי בשקלים"><span>₪</span></div>
+          </div>
+          <p class="gs-hint">ממוצע חודשי כולל מע"מ. אם החשבון דו־חודשי, חלקו אותו בשתיים.</p>
+        </div>
+
+        <div class="gs-field">
+          <label class="gs-label" for="gs-area">שטח גג פנוי להתקנה</label>
+          <div class="gs-inputrow">
+            <input class="gs-range" id="gs-area" type="range" min="20" max="400" step="5" value="80">
+            <div class="gs-num"><input id="gs-area-n" type="number" min="20" max="400" step="5" value="80" aria-label="שטח גג במטרים רבועים"><span>מ"ר</span></div>
+          </div>
+          <p class="gs-hint">הזינו רק שטח פנוי מדודים, מזגנים ואזורים מוצלים.</p>
+        </div>
+
+        <div class="gs-field">
+          <label class="gs-label" for="gs-orient">כיוון הגג</label>
+          <select class="gs-select" id="gs-orient">
+            <option value="south">דרום, התפוקה הגבוהה ביותר</option>
+            <option value="southeast">דרום־מזרח או דרום־מערב</option>
+            <option value="flat">גג שטוח עם מתקני הטיה</option>
+            <option value="eastwest">מזרח או מערב</option>
+            <option value="north">צפון, תפוקה נמוכה</option>
+          </select>
+          <p class="gs-hint">לא בטוחים? השאירו דרום. בבדיקה מקצועית נמדוד כיוון והצללות בפועל.</p>
+        </div>
+
+        <details class="gs-adv">
+          <summary>הנחות החישוב והמחיר</summary>
+          <div class="gs-field">
+            <label class="gs-label" for="gs-price">מחיר התקנה לקילוואט לפני מע"מ</label>
+            <div class="gs-num gs-num-wide"><input id="gs-price" type="number" min="1500" max="8000" step="100" value="3000"><span>₪</span></div>
+          </div>
+          <ul class="gs-assump">
+            <li>תעריף חשמל ביתי: <strong>63.52 אגורות</strong> לקוט"ש כולל מע"מ.</li>
+            <li>תפוקה: <strong>1,500 עד 1,700</strong> קוט"ש בשנה לכל קילוואט מותקן בגג דרומי.</li>
+            <li>שטח משוער: <strong>8 מ"ר</strong> לכל קילוואט מותקן.</li>
+            <li>אחזקה וביטוח: <strong>1%</strong> מעלות המערכת בשנה.</li>
+            <li>ירידת תפוקה משוערת: <strong>0.5%</strong> בשנה.</li>
+          </ul>
+        </details>
+      </section>
+
+      <section class="gs-panel gs-results" aria-live="polite" aria-label="תוצאות החישוב">
+        <div class="gs-tiles">
+          <div class="gs-tile">
+            <span class="gs-tile-k">מערכת מומלצת לפי הצריכה</span>
+            <span class="gs-tile-v" id="gs-kwp">—</span>
+            <span class="gs-tile-u">קילוואט</span>
+          </div>
+          <div class="gs-tile">
+            <span class="gs-tile-k">עלות משוערת כולל מע"מ</span>
+            <span class="gs-tile-v" id="gs-cost">—</span>
+            <span class="gs-tile-u">₪</span>
+          </div>
+          <div class="gs-tile gs-tile-hero">
+            <span class="gs-tile-k">חיסכון שנתי נטו</span>
+            <span class="gs-tile-v" id="gs-save">—</span>
+            <span class="gs-tile-u" id="gs-save-u">₪ בשנה</span>
+          </div>
+          <div class="gs-tile">
+            <span class="gs-tile-k">החזר השקעה משוער</span>
+            <span class="gs-tile-v" id="gs-payback">—</span>
+            <span class="gs-tile-u" id="gs-payback-u">שנים</span>
+          </div>
+        </div>
+
+        <div class="gs-capacity">
+          <span>פוטנציאל התקנה לפי שטח הגג</span>
+          <strong><span id="gs-roof-max">—</span> קילוואט</strong>
+          <small>ההמלצה למעלה מותאמת לצריכה בתוספת מרווח של 15%, ולא מנצלת אוטומטית את כל הגג.</small>
+        </div>
+
+        <div class="gs-tracks">
+          <h3 class="gs-h3">השוואה בין מסלולי ההסדרה</h3>
+          <div class="gs-track" id="gs-track-net">
+            <div class="gs-track-head"><span class="gs-track-name">צריכה עצמית ומכירת עודפים</span><span class="gs-track-val" id="gs-net-val">—</span></div>
+            <div class="gs-bar"><div class="gs-bar-fill" id="gs-net-bar"></div></div>
+            <p class="gs-track-note">הייצור מקזז את צריכת הבית בתעריף המלא. ייצור מעבר לצריכה מחושב בזיכוי של כ־21 אגורות לקוט"ש.</p>
+          </div>
+          <div class="gs-track" id="gs-track-green">
+            <div class="gs-track-head"><span class="gs-track-name">מסלול ירוק, תעריף הזנה</span><span class="gs-track-val" id="gs-green-val">—</span></div>
+            <div class="gs-bar"><div class="gs-bar-fill" id="gs-green-bar"></div></div>
+            <p class="gs-track-note">הייצור מחושב לפי 48 אגורות לקוט"ש, בתעריף קבוע ל־25 שנה למערכות עד 15 קילוואט.</p>
+          </div>
+          <p class="gs-verdict" id="gs-verdict"></p>
+        </div>
+
+        <figure class="gs-fig">
+          <figcaption class="gs-figcap">תזרים מצטבר לאורך 25 שנה, לאחר עלות ההקמה</figcaption>
+          <div class="gs-chart-wrap"><svg class="gs-chart" id="gs-chart" viewBox="0 0 520 220" preserveAspectRatio="none" role="img" aria-labelledby="gs-chart-desc"><desc id="gs-chart-desc">גרף תזרים מצטבר לאורך 25 שנה</desc></svg></div>
+          <div class="gs-chart-x"><span>היום</span><span>שנה 5</span><span>שנה 15</span><span>שנה 25</span></div>
+        </figure>
+
+        <div class="gs-cta">
+          <p class="gs-cta-lead">רוצים חישוב מדויק לפי הגג וחשבון החשמל שלכם?</p>
+          <a class="gs-btn" id="gs-cta-link" href="https://getsolar.co.il/best-price-solar-system-ws/">לבדיקת התאמה והצעת מחיר ללא עלות</a>
+          <p class="gs-cta-note">או בטלפון <a href="tel:+972528283876">052-828-3876</a></p>
+        </div>
+
+        <p class="gs-disclaimer">החישוב הוא הערכה בלבד ואינו הצעת מחיר או הבטחת תשואה. התוצאה בפועל תלויה בשטח הזמין, הצללות, כיוון ושיפוע, ציוד, מגבלות חיבור, פרופיל צריכה, מסלול ההסדרה ושינויי תעריפים. הנתונים עודכנו בספטמבר 2026.</p>
+      </section>
+    </div>
+  </section>
+
+  <section class="gs-copy" aria-labelledby="gs-how-title">
+    <h2 id="gs-how-title">איך המחשבון הסולארי מחשב את התוצאה?</h2>
+    <p>המחשבון ממיר את חשבון החשמל החודשי לצריכת חשמל שנתית לפי תעריף של 63.52 אגורות לקוט"ש. לאחר מכן הוא מחשב את גודל המערכת הדרוש לכיסוי הצריכה, מוסיף מרווח של 15% ומגביל את ההמלצה לפי שטח הגג הפנוי. במקביל מוצג פוטנציאל ההתקנה המרבי של הגג לפי הנחה של כ־8 מ"ר לכל קילוואט.</p>
+    <p>הערכת הייצור מבוססת על טווח של 1,500 עד 1,700 קוט"ש בשנה לכל קילוואט מותקן בגג דרומי. כיוון פחות יעיל מפחית את התפוקה. הצללה, מרווחים בין הפאנלים, שיפוע, טמפרטורה ומגבלות הנדסיות נבדקים רק בסיור או בתכנון מקצועי ולכן אינם יכולים להיכלל במחשבון כללי.</p>
+
+    <h2>מה ההבדל בין צריכה עצמית למסלול הירוק?</h2>
+    <p>במודל של צריכה עצמית, החשמל שמיוצר בזמן שהבית צורך חשמל מקזז רכישה מהרשת לפי התעריף הביתי. עודפים מעבר לצריכה מקבלים תעריף נמוך יותר. במסלול הירוק החישוב מבוסס על תעריף הזנה של 48 אגורות לקוט"ש למערכות עד 15 קילוואט, הקבוע ל־25 שנה. המחשבון משווה בין שתי האפשרויות לפי הנתונים שהוזנו, אך הבחירה הסופית דורשת בדיקה של מסלול החיבור והצריכה בפועל.</p>
+
+    <h2>למה תקופת ההחזר כאן עשויה להיות קצרה מהמספרים בעיתונות?</h2>
+    <p>כתבות רבות משתמשות במחירי שוק כלליים, ולעיתים כוללות מערכות יקרות יותר או הנחות שמרניות שונות. המחשבון מתחיל ממחיר של 3,000 ₪ לקילוואט לפני מע"מ, שהוא מחיר העבודה בפועל של Get Solar. לכן בדוגמה של חשבון חודשי בגובה 800 ₪ וגג דרומי פנוי של 80 מ"ר מתקבלת מערכת של 10 קילוואט, עלות משוערת של 35,400 ₪ וחיסכון שנתי שמרני של כ־9,174 ₪. תקופת ההחזר המחושבת היא כ־3.9 שנים. זו דוגמה חשבונאית, לא התחייבות לתוצאה זהה בכל גג.</p>
+  </section>
+
+  <section class="gs-faq" aria-labelledby="gs-faq-title">
+    <h2 id="gs-faq-title">שאלות נפוצות על המחשבון הסולארי</h2>
+    <details><summary>כמה מדויק המחשבון הסולארי?</summary><p>המחשבון נותן הערכה ראשונית לפי צריכה, שטח וכיוון. חישוב מדויק דורש צילום גג, בדיקת הצללות, תכנון פריסת פאנלים, בדיקת חיבור וניתוח חשבונות חשמל.</p></details>
+    <details><summary>למה גודל המערכת המומלץ קטן מפוטנציאל הגג?</summary><p>ההמלצה מותאמת לצריכת החשמל בתוספת 15%. פוטנציאל הגג מציג כמה ניתן להתקין מבחינת שטח בלבד. מערכת גדולה יותר אינה תמיד האפשרות הכלכלית הנכונה.</p></details>
+    <details><summary>האם המחיר במחשבון כולל מע"מ?</summary><p>כן. מחיר הבסיס הוא 3,000 ₪ לקילוואט לפני מע"מ, והתוצאה המוצגת בעלות המערכת כוללת מע"מ בשיעור 18%.</p></details>
+    <details><summary>מה משפיע על החיסכון בפועל?</summary><p>הגורמים המרכזיים הם כיוון ושיפוע הגג, הצללות, שטח פנוי, תפוקת הציוד, פרופיל הצריכה, מסלול ההסדרה, תחזוקה ושינויים עתידיים בתעריפים.</p></details>
+    <details><summary>האם גג שפונה מזרחה או מערבה מתאים למערכת סולארית?</summary><p>במקרים רבים כן, אך התפוקה צפויה להיות נמוכה יותר מגג דרומי. המחשבון מפחית את תחזית הייצור בהתאם לכיוון שנבחר.</p></details>
+    <details><summary>האם אפשר להתקין מערכת בלי השקעה ראשונית?</summary><p>קיימות אפשרויות מימון שעשויות לאפשר התקנה בלי תשלום מלא מראש. התנאים תלויים בגג, בהיקף המערכת ובאישור הגוף המממן.</p></details>
+  </section>
+
+  <section class="gs-final-cta">
+    <div><h2>המספר במחשבון נראה מתאים?</h2><p>נבדוק את הגג ואת החשבון ונכין חישוב מעשי ללא עלות.</p></div>
+    <a href="https://getsolar.co.il/best-price-solar-system-ws/?utm_source=solar-calculator&utm_medium=internal&utm_campaign=calculator-page">לבדיקת התאמה</a>
+  </section>
+
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+    {"@type":"Question","name":"כמה מדויק המחשבון הסולארי?","acceptedAnswer":{"@type":"Answer","text":"המחשבון נותן הערכה ראשונית לפי צריכה, שטח וכיוון. חישוב מדויק דורש צילום גג, בדיקת הצללות, תכנון פריסת פאנלים, בדיקת חיבור וניתוח חשבונות חשמל."}},
+    {"@type":"Question","name":"למה גודל המערכת המומלץ קטן מפוטנציאל הגג?","acceptedAnswer":{"@type":"Answer","text":"ההמלצה מותאמת לצריכת החשמל בתוספת 15%. פוטנציאל הגג מציג כמה ניתן להתקין מבחינת שטח בלבד. מערכת גדולה יותר אינה תמיד האפשרות הכלכלית הנכונה."}},
+    {"@type":"Question","name":"האם המחיר במחשבון כולל מע״מ?","acceptedAnswer":{"@type":"Answer","text":"כן. מחיר הבסיס הוא 3,000 ₪ לקילוואט לפני מע״מ, והתוצאה המוצגת בעלות המערכת כוללת מע״מ בשיעור 18%."}},
+    {"@type":"Question","name":"מה משפיע על החיסכון בפועל?","acceptedAnswer":{"@type":"Answer","text":"הגורמים המרכזיים הם כיוון ושיפוע הגג, הצללות, שטח פנוי, תפוקת הציוד, פרופיל הצריכה, מסלול ההסדרה, תחזוקה ושינויים עתידיים בתעריפים."}},
+    {"@type":"Question","name":"האם גג שפונה מזרחה או מערבה מתאים למערכת סולארית?","acceptedAnswer":{"@type":"Answer","text":"במקרים רבים כן, אך התפוקה צפויה להיות נמוכה יותר מגג דרומי. המחשבון מפחית את תחזית הייצור בהתאם לכיוון שנבחר."}},
+    {"@type":"Question","name":"האם אפשר להתקין מערכת בלי השקעה ראשונית?","acceptedAnswer":{"@type":"Answer","text":"קיימות אפשרויות מימון שעשויות לאפשר התקנה בלי תשלום מלא מראש. התנאים תלויים בגג, בהיקף המערכת ובאישור הגוף המממן."}}
+  ]}
+  </script>
+</div>
+
+<style>
+.gs-seo-page{--ink:#111;--ink2:#4a4a44;--ink3:#74746d;--gold:#D4A020;--goldD:#9b7010;--goldSoft:#F5E3BC;--bg:#F0EDE5;--surface:#FBFAF6;--line:#DCD7C9;direction:rtl;text-align:right;color:var(--ink);font-family:inherit;line-height:1.65;width:100%!important;max-width:none!important;position:static;left:auto;transform:none;margin:0;background:var(--bg);padding:1px 0 48px}
+.gs-seo-page *,.gs-seo-page *::before,.gs-seo-page *::after{box-sizing:border-box}
+.gs-seo-intro{width:min(1100px,calc(100vw - 24px));margin-inline:auto;text-align:center;padding:34px clamp(18px,4vw,54px) 26px}
+.gs-eyebrow{display:inline-block;color:var(--goldD);font-weight:800;font-size:13px;margin-bottom:8px}
+.gs-seo-intro h1{font-size:clamp(28px,5vw,48px);line-height:1.16;margin:0 auto 14px;max-width:850px;color:var(--ink)}
+.gs-seo-intro>p{max-width:760px;margin:0 auto;color:var(--ink2);font-size:clamp(15px,2vw,18px)}
+.gs-trust{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:18px}
+.gs-trust span{background:#fff;border:1px solid var(--line);border-radius:999px;padding:7px 13px;font-size:13px;font-weight:700}
+.gs-calc{width:min(1100px,calc(100vw - 24px));margin-inline:auto;background:var(--bg);padding:clamp(16px,3vw,32px);border-radius:20px}
+.gs-head{margin-bottom:22px}.gs-title{font-size:clamp(22px,3.4vw,32px);font-weight:800;margin:0 0 6px;color:var(--ink);line-height:1.25}.gs-sub{margin:0;color:var(--ink2);font-size:clamp(14px,1.7vw,16px);max-width:65ch}
+.gs-grid{display:grid;grid-template-columns:minmax(0,340px) minmax(0,1fr);gap:18px;align-items:start}.gs-panel{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:clamp(14px,2.2vw,22px)}
+.gs-field{margin-bottom:20px}.gs-field:last-child{margin-bottom:0}.gs-label{display:block;font-weight:700;font-size:15px;margin-bottom:9px;color:var(--ink)}.gs-inputrow{display:flex;align-items:center;gap:12px}
+.gs-range{flex:1;min-width:0;-webkit-appearance:none;appearance:none;height:5px;border-radius:99px;background:var(--line);outline:none}.gs-range::-webkit-slider-thumb{-webkit-appearance:none;width:22px;height:22px;border-radius:50%;background:var(--gold);border:3px solid var(--surface);box-shadow:0 1px 4px rgba(0,0,0,.28);cursor:pointer}.gs-range::-moz-range-thumb{width:22px;height:22px;border-radius:50%;background:var(--gold);border:3px solid var(--surface);box-shadow:0 1px 4px rgba(0,0,0,.28);cursor:pointer}.gs-range:focus-visible{outline:2px solid var(--goldD);outline-offset:4px}
+.gs-num{display:flex;align-items:center;gap:4px;background:var(--bg);border:1px solid var(--line);border-radius:9px;padding:5px 9px}.gs-num-wide{max-width:160px}.gs-num input{width:66px;border:0;background:transparent;font:inherit;font-weight:700;font-size:16px;color:var(--ink);text-align:center;padding:0;-moz-appearance:textfield}.gs-num input::-webkit-outer-spin-button,.gs-num input::-webkit-inner-spin-button{-webkit-appearance:none;margin:0}.gs-num input:focus{outline:none}.gs-num:focus-within{border-color:var(--gold);box-shadow:0 0 0 3px var(--goldSoft)}.gs-num span{color:var(--ink3);font-size:14px;font-weight:600}
+.gs-select{width:100%;padding:10px 12px;border:1px solid var(--line);border-radius:9px;background:var(--bg);font:inherit;font-size:15px;color:var(--ink);cursor:pointer}.gs-select:focus{outline:none;border-color:var(--gold);box-shadow:0 0 0 3px var(--goldSoft)}.gs-hint{margin:7px 0 0;font-size:12.5px;color:var(--ink3);line-height:1.5}
+.gs-adv{margin-top:20px;border-top:1px solid var(--line);padding-top:14px}.gs-adv summary{cursor:pointer;font-size:13.5px;font-weight:700;color:var(--ink2);list-style:none;user-select:none}.gs-adv summary::-webkit-details-marker{display:none}.gs-adv summary::before{content:"▸ ";color:var(--goldD)}.gs-adv[open] summary::before{content:"▾ "}.gs-adv .gs-field{margin-top:14px}.gs-assump{margin:12px 0 0;padding-inline-start:18px;font-size:12.5px;color:var(--ink3);line-height:1.8}.gs-assump strong{color:var(--ink2)}
+.gs-tiles{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-bottom:12px}.gs-tile{background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:14px 12px;display:flex;flex-direction:column;gap:2px;min-width:0}.gs-tile-hero{background:var(--ink);border-color:var(--ink)}.gs-tile-k{font-size:12px;color:var(--ink3);font-weight:600;line-height:1.35}.gs-tile-hero .gs-tile-k{color:#B6B2A6}.gs-tile-v{font-size:clamp(24px,3.6vw,32px);font-weight:800;line-height:1.15;letter-spacing:-.5px;font-variant-numeric:tabular-nums;color:var(--ink)}.gs-tile-hero .gs-tile-v{color:var(--gold)}.gs-tile-u{font-size:12px;color:var(--ink3);font-weight:600}.gs-tile-hero .gs-tile-u{color:#B6B2A6}
+.gs-capacity{display:grid;grid-template-columns:1fr auto;gap:2px 12px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:10px;padding:11px 13px;margin-bottom:22px;font-size:13px}.gs-capacity strong{font-size:17px}.gs-capacity small{grid-column:1/-1;color:var(--ink3);font-size:11.5px}
+.gs-h3{font-size:16px;font-weight:800;margin:0 0 14px}.gs-tracks{border-top:1px solid var(--line);padding-top:20px;margin-bottom:24px}.gs-track{margin-bottom:16px}.gs-track-head{display:flex;justify-content:space-between;align-items:baseline;gap:10px;margin-bottom:6px}.gs-track-name{font-weight:700;font-size:14.5px}.gs-track-val{font-weight:800;font-size:17px;font-variant-numeric:tabular-nums;white-space:nowrap}.gs-bar{height:9px;background:var(--bg);border:1px solid var(--line);border-radius:99px;overflow:hidden}.gs-bar-fill{height:100%;width:0;background:var(--gold);border-radius:99px;transition:width .35s ease}.gs-track.is-loser .gs-bar-fill{background:var(--line)}.gs-track.is-loser .gs-track-val,.gs-track.is-loser .gs-track-name{color:var(--ink3)}.gs-track-note{margin:7px 0 0;font-size:12.5px;color:var(--ink3);line-height:1.55}.gs-verdict{margin:14px 0 0;padding:11px 13px;background:var(--goldSoft);border-radius:9px;font-size:13.5px;font-weight:600;color:#5A4208;line-height:1.55}
+.gs-fig{margin:0 0 24px;border-top:1px solid var(--line);padding-top:20px}.gs-figcap{font-size:13px;color:var(--ink3);font-weight:600;margin-bottom:10px}.gs-chart-wrap{width:100%}.gs-chart{width:100%;height:190px;display:block;overflow:visible}.gs-chart-x{display:flex;justify-content:space-between;font-size:11.5px;color:var(--ink3);margin-top:6px;font-weight:600}
+.gs-cta{background:var(--ink);border-radius:12px;padding:20px;text-align:center}.gs-cta-lead{margin:0 0 12px;color:#EDE9DD;font-size:15.5px;font-weight:600}.gs-btn{display:inline-block;background:var(--gold);color:#1A1405!important;font-weight:800;font-size:15.5px;text-decoration:none!important;padding:13px 26px;border-radius:9px;transition:background .18s ease,transform .18s ease}.gs-btn:hover,.gs-btn:focus-visible{background:#E8B32C;transform:translateY(-1px)}.gs-cta-note{margin:11px 0 0;font-size:13px;color:#B6B2A6}.gs-cta-note a{color:var(--gold);text-decoration:none;font-weight:700}.gs-disclaimer{margin:18px 0 0;font-size:11.5px;color:var(--ink3);line-height:1.65;border-top:1px solid var(--line);padding-top:14px}
+.gs-copy,.gs-faq{max-width:860px;margin:42px auto 0;padding:0 14px}.gs-copy h2,.gs-faq h2{font-size:clamp(22px,3vw,30px);line-height:1.25;margin:34px 0 10px}.gs-copy p{color:var(--ink2);margin:0 0 16px}.gs-faq details{background:#fff;border:1px solid var(--line);border-radius:12px;padding:0 18px;margin:10px 0}.gs-faq summary{cursor:pointer;font-weight:800;padding:16px 0;list-style:none}.gs-faq summary::-webkit-details-marker{display:none}.gs-faq summary::after{content:"+";float:left;color:var(--goldD);font-size:22px;line-height:1}.gs-faq details[open] summary::after{content:"−"}.gs-faq p{margin:0;padding:0 0 16px;color:var(--ink2)}
+.gs-final-cta{width:min(1100px,calc(100vw - 24px));margin:42px auto 0;background:var(--ink);color:#fff;border-radius:18px;padding:clamp(22px,4vw,38px);display:flex;justify-content:space-between;align-items:center;gap:20px}.gs-final-cta h2{color:#fff;margin:0 0 4px;font-size:clamp(22px,3vw,30px)}.gs-final-cta p{margin:0;color:#d2cec2}.gs-final-cta>a{display:inline-block;background:var(--gold);color:#171205!important;text-decoration:none!important;border-radius:9px;padding:13px 24px;font-weight:800;white-space:nowrap}
+@media(max-width:820px){.gs-grid{grid-template-columns:1fr}.gs-seo-intro{padding-top:22px}.gs-final-cta{align-items:flex-start;flex-direction:column}}
+@media(max-width:520px){.gs-tiles{grid-template-columns:1fr 1fr}.gs-tile{padding:12px 10px}.gs-tile-v{font-size:24px}.gs-chart{height:160px}.gs-btn{width:100%;padding-inline:12px}.gs-final-cta>a{width:100%;text-align:center}}
+@media(prefers-reduced-motion:reduce){.gs-bar-fill,.gs-btn{transition:none}}
+
+/* התאמה לשפה החזותית של אתר Get Solar */
+.gs-seo-page{
+  --ink:#F4F6F8;--ink2:#C3CCD8;--ink3:#96A2B4;
+  --gold:#F5A623;--goldD:#F5A623;--goldSoft:rgba(245,166,35,.13);
+  --bg:#0A0F16;--surface:#1B2330;--line:rgba(244,246,248,.16);
+  font-family:Assistant,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  background:var(--bg);color:var(--ink);padding-bottom:64px;
+}
+.gs-seo-intro{padding-top:48px;padding-bottom:34px}
+.gs-eyebrow{color:var(--gold);letter-spacing:.04em}
+.gs-seo-intro h1,.gs-title,.gs-copy h2,.gs-faq h2{color:var(--ink)}
+.gs-seo-intro h1{font-weight:800;letter-spacing:-.025em}
+.gs-seo-intro h1 span{display:block;color:var(--gold)}
+.gs-seo-intro>p,.gs-sub,.gs-copy p,.gs-faq p{color:var(--ink2)}
+.gs-trust span{background:rgba(255,255,255,.05);border-color:var(--line);color:var(--ink);box-shadow:inset 0 1px 0 rgba(255,255,255,.04)}
+.gs-calc{background:linear-gradient(145deg,rgba(27,35,48,.96),rgba(13,20,30,.98));border:1px solid var(--line);box-shadow:0 24px 70px rgba(0,0,0,.28)}
+.gs-panel{background:rgba(10,15,22,.7);border-color:var(--line);box-shadow:inset 0 1px 0 rgba(255,255,255,.025)}
+.gs-label,.gs-h3,.gs-track-name,.gs-track-val,.gs-adv summary,.gs-assump strong{color:var(--ink)}
+.gs-num,.gs-select,.gs-tile,.gs-bar{background:#111923;border-color:var(--line);color:var(--ink)}
+.gs-select{color-scheme:dark}
+.gs-range{background:rgba(244,246,248,.18)}
+.gs-range::-webkit-slider-thumb{background:var(--gold);border-color:#111923;box-shadow:0 0 0 4px rgba(245,166,35,.14)}
+.gs-range::-moz-range-thumb{background:var(--gold);border-color:#111923;box-shadow:0 0 0 4px rgba(245,166,35,.14)}
+.gs-capacity{background:#111923;border-color:var(--line);color:var(--ink)}
+.gs-tile-hero{background:var(--gold);border-color:var(--gold);box-shadow:0 10px 28px rgba(245,166,35,.16)}
+.gs-tile-hero .gs-tile-k,.gs-tile-hero .gs-tile-v,.gs-tile-hero .gs-tile-u{color:#1A1206}
+.gs-verdict{background:var(--goldSoft);border:1px solid rgba(245,166,35,.3);color:var(--ink2)}
+.gs-track.is-loser .gs-bar-fill{background:rgba(244,246,248,.2)}
+.gs-cta{background:#111923;border:1px solid var(--line)}
+.gs-cta-lead{color:var(--ink)}
+.gs-cta-note{color:var(--ink3)}
+.gs-btn,.gs-final-cta>a{background:var(--gold);color:#1A1206!important;border-radius:10px;box-shadow:0 10px 28px rgba(245,166,35,.18)}
+.gs-btn:hover,.gs-btn:focus-visible,.gs-final-cta>a:hover,.gs-final-cta>a:focus-visible{background:#FFB12B;color:#1A1206!important}
+.gs-copy,.gs-faq{max-width:920px}
+.gs-copy h2,.gs-faq h2{padding-top:4px}
+.gs-copy h2::before,.gs-faq h2::before{content:"";display:inline-block;width:28px;height:3px;background:var(--gold);border-radius:99px;margin-inline-end:10px;vertical-align:middle}
+.gs-faq details{background:#111923;border-color:var(--line);box-shadow:inset 0 1px 0 rgba(255,255,255,.025)}
+.gs-faq summary{color:var(--ink)}
+.gs-faq summary::after{color:var(--gold)}
+.gs-final-cta{background:linear-gradient(135deg,#1B2330,#111923);border:1px solid var(--line);box-shadow:0 22px 60px rgba(0,0,0,.24)}
+.gs-final-cta p{color:var(--ink2)}
+@media(max-width:820px){.gs-seo-intro{padding-top:30px}.gs-calc{border-radius:16px}}
+</style>
+
+<script>
+(function(){
+  var root=document.querySelector('.gs-seo-page'); if(!root||root.dataset.ready==='1')return; root.dataset.ready='1';
+  var C=window.GS_CONFIG,$=function(id){return root.querySelector('#'+id);};
+  var ORIENT={south:1,southeast:.93,flat:.95,eastwest:.85,north:.65};
+  var ils=function(n){return Math.round(n).toLocaleString('he-IL');};
+  function model(bill,area,orient,price,yieldVal){
+    var f=ORIENT[orient]||1,annualUse=(bill*12)/C.tariff,roofMax=area/C.areaPerKw;
+    var byUse=annualUse/(((C.yieldLow+C.yieldHigh)/2)*f)*1.15;
+    var kwp=Math.round(Math.max(1,Math.min(roofMax,byUse))*10)/10;
+    var cost=kwp*price*C.vat,prod=kwp*yieldVal*f,maint=cost*C.maintenance;
+    var offset=Math.min(prod,annualUse),surplus=Math.max(0,prod-annualUse);
+    var netMeter=offset*C.tariff+surplus*C.netMeterRate-maint;
+    var green=kwp<=C.greenMaxKw?prod*C.greenRate-maint:null;
+    var best=netMeter;if(green!==null){if(green>netMeter)best=green;}
+    return {kwp:kwp,roofMax:Math.round(roofMax*10)/10,cost:cost,prod:prod,annualUse:annualUse,netMeter:netMeter,green:green,best:best,payback:best>0?cost/best:0};
+  }
+  function drawChart(svg,cost,annual){
+    var W=520,H=190,PAD=4,YEARS=25,pts=[],cum=-cost,max=0,min=-cost;
+    for(var y=0;y<=YEARS;y++){if(y>0)cum+=annual*Math.pow(1-C.degradation,y-1);pts.push(cum);if(cum>max)max=cum;}
+    var span=max-min||1,X=function(i){return W-PAD-(i/YEARS)*(W-PAD*2);},Y=function(v){return PAD+(1-(v-min)/span)*(H-PAD*2);},zeroY=Y(0);
+    var line=pts.map(function(v,i){return(i?'L':'M')+X(i).toFixed(1)+' '+Y(v).toFixed(1);}).join(' ');
+    var areaPath=line+' L'+X(YEARS).toFixed(1)+' '+zeroY.toFixed(1)+' L'+X(0).toFixed(1)+' '+zeroY.toFixed(1)+' Z';
+    var bi=0;for(var k=0;k<pts.length;k++){if(pts[k]>=0){bi=k;break;}}
+    var bx=X(bi),grad='gsGrad-'+Math.random().toString(36).slice(2,8);
+    svg.innerHTML='<desc>גרף תזרים מצטבר לאורך 25 שנה</desc><defs><linearGradient id="'+grad+'" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#F5A623" stop-opacity=".45"/><stop offset="100%" stop-color="#F5A623" stop-opacity=".04"/></linearGradient></defs><path d="'+areaPath+'" fill="url(#'+grad+')"/><line x1="'+PAD+'" y1="'+zeroY.toFixed(1)+'" x2="'+(W-PAD)+'" y2="'+zeroY.toFixed(1)+'" stroke="#96A2B4" stroke-width="1" stroke-dasharray="4 4"/><path d="'+line+'" fill="none" stroke="#F5A623" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/><circle cx="'+bx.toFixed(1)+'" cy="'+zeroY.toFixed(1)+'" r="5.5" fill="#1B2330" stroke="#F4F6F8" stroke-width="2.5"/><text x="'+bx.toFixed(1)+'" y="'+(zeroY-13).toFixed(1)+'" text-anchor="middle" font-size="11.5" font-weight="700" fill="#F4F6F8">נקודת איזון</text><text x="'+(X(YEARS)+7).toFixed(1)+'" y="'+(Y(max)+16).toFixed(1)+'" direction="ltr" text-anchor="start" font-size="12.5" font-weight="800" fill="#F4F6F8">'+ils(max)+' ₪</text>';
+  }
+  function render(){
+    var bill=+$('gs-bill-n').value||800,area=+$('gs-area-n').value||80,orient=$('gs-orient').value,price=+$('gs-price').value||C.pricePerKw;
+    var lo=model(bill,area,orient,price,C.yieldLow),hi=model(bill,area,orient,price,C.yieldHigh);
+    $('gs-kwp').textContent=lo.kwp.toFixed(1);$('gs-roof-max').textContent=lo.roofMax.toFixed(1);$('gs-cost').textContent=ils(lo.cost);$('gs-save').textContent=ils(lo.best);
+    $('gs-save-u').textContent='₪ בשנה, ובתרחיש גבוה עד '+ils(hi.best);$('gs-payback').textContent=lo.payback.toFixed(1);$('gs-payback-u').textContent='שנים, ובתרחיש גבוה '+hi.payback.toFixed(1);
+    var nm=lo.netMeter,gr=lo.green,top=Math.max(nm,gr===null?0:gr)||1;
+    $('gs-net-val').textContent=ils(nm)+' ₪';$('gs-net-bar').style.width=Math.max(4,(nm/top)*100)+'%';
+    var greenEl=$('gs-track-green'),netEl=$('gs-track-net');
+    if(gr===null){$('gs-green-val').textContent='לא רלוונטי מעל 15 קילוואט';$('gs-green-bar').style.width='0%';greenEl.classList.add('is-loser');netEl.classList.remove('is-loser');$('gs-verdict').textContent='המערכת המומלצת גדולה מ־15 קילוואט, ולכן החישוב בוחר במודל הצריכה העצמית ומכירת העודפים.';}
+    else{$('gs-green-val').textContent=ils(gr)+' ₪';$('gs-green-bar').style.width=Math.max(4,(gr/top)*100)+'%';var gWins=gr>nm;greenEl.classList.toggle('is-loser',!gWins);netEl.classList.toggle('is-loser',gWins);var diff=ils(Math.abs(gr-nm));$('gs-verdict').textContent=gWins?'לפי ההנחות שהוזנו, המסלול הירוק גבוה בכ־'+diff+' ₪ בשנה. לפני בחירה יש לבדוק את תנאי החיבור בפועל.':'לפי ההנחות שהוזנו, צריכה עצמית ומכירת עודפים גבוהות בכ־'+diff+' ₪ בשנה. לפני בחירה יש לבדוק את פרופיל הצריכה בפועל.';}
+    drawChart($('gs-chart'),lo.cost,lo.best);
+    var qs=new URLSearchParams({utm_source:'solar-calculator',utm_medium:'tool',utm_campaign:'solar_roi',gs_kw:lo.kwp.toFixed(1),gs_bill:String(bill),gs_area:String(area)});
+    $('gs-cta-link').href=C.ctaUrl+'?'+qs.toString();
+  }
+  function pair(rangeId,numId){var r=$(rangeId),n=$(numId);r.addEventListener('input',function(){n.value=r.value;render();});n.addEventListener('input',function(){var v=+n.value;if(v>=+r.min){if(v<=+r.max)r.value=v;}render();});}
+  pair('gs-bill','gs-bill-n');pair('gs-area','gs-area-n');$('gs-orient').addEventListener('change',render);$('gs-price').addEventListener('input',render);render();
+})();
+</script>
+
+</main>
+<footer class="gh-foot">
+הגרסה הראשית והמעודכנת נמצאת באתר <a href="https://getsolar.co.il/solar-calculator/">Get Solar</a><br>
+גט סולאר · שבטי ישראל 45, קריית ביאליק · <a href="tel:+972528283876">052-828-3876</a>
+</footer>
+</div>
+</body>
+</html>
